@@ -1,0 +1,1730 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 4</name>
+    <events>
+        <variable constant="0" name="one" sid="3708445974563773" static="0" type="number">1</variable>
+        <variable constant="0" name="two" sid="4104811779100904" static="0" type="number">1</variable>
+        <variable constant="0" name="three" sid="9673038929492264" static="0" type="number">1</variable>
+        <variable constant="0" name="four" sid="5922156572513247" static="0" type="number">1</variable>
+        <variable constant="0" name="Ice" sid="1505771752315202" static="0" type="number">0</variable>
+        <variable constant="0" name="Shield" sid="5864370213092774" static="0" type="number">0</variable>
+        <variable constant="0" name="Mine" sid="8670561828529269" static="0" type="number">0</variable>
+        <variable constant="0" name="Money_Shop" sid="9871381433544595" static="0" type="number">0</variable>
+        <event-block sid="4566097882129053">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5364997309956943" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="1933289996871367" type="LocalStorage">
+                    <param id="0" name="Key">&quot;one&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="9733365718250781" type="LocalStorage">
+                    <param id="0" name="Key">&quot;two&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="6570439123448513" type="LocalStorage">
+                    <param id="0" name="Key">&quot;three&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="1871683018136791" type="LocalStorage">
+                    <param id="0" name="Key">&quot;four&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="90181768369541" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Ice&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="5569396263868524" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Mine&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="9093253602268957" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Shield&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8592065611765898">
+            <conditions>
+                <condition id="9" name="On item exists" sid="433266069388633" type="LocalStorage">
+                    <param id="0" name="Key">&quot;one&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="8344357288960937" type="LocalStorage">
+                    <param id="0" name="Key">&quot;one&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6128329500772318">
+            <conditions>
+                <condition id="9" name="On item exists" sid="1477520564465846" type="LocalStorage">
+                    <param id="0" name="Key">&quot;two&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="831542405384592" type="LocalStorage">
+                    <param id="0" name="Key">&quot;two&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4861070518441991">
+            <conditions>
+                <condition id="9" name="On item exists" sid="6288840733169744" type="LocalStorage">
+                    <param id="0" name="Key">&quot;three&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="3892804897934809" type="LocalStorage">
+                    <param id="0" name="Key">&quot;three&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4085570359718821">
+            <conditions>
+                <condition id="9" name="On item exists" sid="9691099626631032" type="LocalStorage">
+                    <param id="0" name="Key">&quot;four&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="4867966886857192" type="LocalStorage">
+                    <param id="0" name="Key">&quot;four&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7411618526130493">
+            <conditions>
+                <condition id="9" name="On item exists" sid="8485299354049006" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Ice&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="4835877419191038" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Ice&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="509728492390572">
+            <conditions>
+                <condition id="9" name="On item exists" sid="831758249876468" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Mine&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="2442833831438913" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Mine&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2800269051279093">
+            <conditions>
+                <condition id="9" name="On item exists" sid="8974865042959996" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Shield&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="5242661765931213" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Shield&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2002016678064766">
+            <conditions>
+                <condition id="1" name="On item get" sid="19809129541734" type="LocalStorage">
+                    <param id="0" name="Key">&quot;one&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9618562088194075" type="System">
+                    <param id="0" name="Variable">one</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4617829051359635">
+            <conditions>
+                <condition id="1" name="On item get" sid="4248584647556444" type="LocalStorage">
+                    <param id="0" name="Key">&quot;two&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2541944664565021" type="System">
+                    <param id="0" name="Variable">two</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8703662791607399">
+            <conditions>
+                <condition id="1" name="On item get" sid="5015596617958407" type="LocalStorage">
+                    <param id="0" name="Key">&quot;three&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="36683949419465" type="System">
+                    <param id="0" name="Variable">three</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1713170710172193">
+            <conditions>
+                <condition id="1" name="On item get" sid="1940380313811854" type="LocalStorage">
+                    <param id="0" name="Key">&quot;four&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3276110157937196" type="System">
+                    <param id="0" name="Variable">four</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8727421138529372">
+            <conditions>
+                <condition id="1" name="On item get" sid="1608887208733537" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Ice&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5057116194964973" type="System">
+                    <param id="0" name="Variable">Ice</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4509176595727578">
+            <conditions>
+                <condition id="1" name="On item get" sid="5129992558035301" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Mine&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2746780487675374" type="System">
+                    <param id="0" name="Variable">Mine</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8521408782864545">
+            <conditions>
+                <condition id="1" name="On item get" sid="8188941643360464" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Shield&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="664034111975248" type="System">
+                    <param id="0" name="Variable">Shield</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7088286569930852">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6517898935642167" type="TouchWrap">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5305610230748886">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6471550440936131" type="Sprite6">
+                            <param id="0" name="Unique ID">130</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="7019951555448998" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9602790011256767" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9413648922974084" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5483402184926963">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="5636416265095076" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="2386843300081047" type="btn_Shop">
+                                    <param id="0" name="Width">170</param>
+                                    <param id="1" name="Height">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3377134047134037">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="7337251493089912" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="9921636194425078" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3400519323866949">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="1620750625102117" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="9758927818628092" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3091010606297554">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8509891824293692" type="Sprite6">
+                            <param id="0" name="Unique ID">131</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="9591079584708673" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9484560286624161" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="4148116337782573" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="985533389710036">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="9565552417370045" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="1405786828748705" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3857304110107007">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="3252644802607982" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="8535300772162146" type="btn_Shop">
+                                    <param id="0" name="Width">170</param>
+                                    <param id="1" name="Height">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4145865046989391">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="3112466827434843" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="3702287871722337" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3218872350835958">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2083005078694792" type="Sprite6">
+                            <param id="0" name="Unique ID">132</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="7265288625378873" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="1896524341484168" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2433317247011419" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7128361525340696">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="541126546329565" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="2120643744421112" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1176866172797285">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="2200606083172007" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="3053884753097012" type="btn_Shop">
+                                    <param id="0" name="Width">150</param>
+                                    <param id="1" name="Height">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5230130888005574">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="8542444155088106" type="btn_Shop">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="2753807406533229" type="btn_Shop">
+                                    <param id="0" name="Width">170</param>
+                                    <param id="1" name="Height">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2523047643319955">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5422236366823776" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="2804038458359507" type="Sprite9">
+                    <param id="0" name="X">clamp(Self.X,100,800)</param>
+                </action>
+                <action id="0" name="Set text" sid="5429226212356573" type="ice">
+                    <param id="0" name="Text">Ice</param>
+                </action>
+                <action id="0" name="Set text" sid="962878613541436" type="Minee">
+                    <param id="0" name="Text">Mine</param>
+                </action>
+                <action id="0" name="Set text" sid="3320642442246558" type="Shield">
+                    <param id="0" name="Text">Shield</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3500741789288603">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2519541931539575" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5247688562336882" type="Player">
+                    <param id="0" name="Pin to">Sprite9</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1209341009499666" type="Player_Sar">
+                    <param id="0" name="Pin to">Sprite9</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1475604148518986">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2698208996485422" type="Sprite5">
+                            <param id="0" name="Unique ID">119</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="8921871763897051" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6812802522927481">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4755719170987637" type="Sprite5">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="5439829285042885" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9873212623295505">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2609439378724514" type="Sprite5">
+                            <param id="0" name="Unique ID">121</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="4311509770553485" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2062166854873438">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3975049939166595" type="Sprite5">
+                            <param id="0" name="Unique ID">122</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="6508756812545623" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1485964843247481">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6775075560082689" type="Sprite5">
+                            <param id="0" name="Unique ID">123</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="2642020473666555" type="Sprite5">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7338585084526774">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6623013206884914" type="Sprite11">
+                            <param id="0" name="Unique ID">141</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="323042370938313" type="Sprite11">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3548985854790711">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9523114186926908" type="Sprite11">
+                            <param id="0" name="Unique ID">142</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="59895222993451" type="Sprite11">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1565864232772515">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6516435118175967" type="Sprite11">
+                            <param id="0" name="Unique ID">166</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="6661812328750997" type="Sprite11">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9091175698962251">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="4076697344337259" type="Sprite11">
+                            <param id="0" name="Unique ID">165</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="235277437272853" type="Sprite11">
+                            <param id="0" name="Pin to">Sprite9</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9547550748946464">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="8146157527440128" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3737246211665294" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5675625280157213">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="87118413652886" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3911131041231562" type="Menu">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="8146289056267537" type="Menu">
+                    <param id="0" name="Width">90</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4148038171159364">
+            <conditions>
+                <condition id="3" name="On touched object" sid="246008438364639" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1212675745395979" type="Menu">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="-7" name="Set size" sid="6820074946502227" type="Menu">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7263202907301159">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6911373264396776" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="4485935684342098" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="2324763555681706" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="678427553695386" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1348307664830785">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="6332573733633127" type="System">
+                    <param id="0" name="Layer">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="DragDrop" id="0" name="Set enabled" sid="125110627172764" type="Sprite9">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6759380966735144">
+            <conditions>
+                <condition id="-22" name="Else" sid="2557576801958389" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="DragDrop" id="0" name="Set enabled" sid="4868828671307145" type="Sprite9">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5528736167818176">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="969152214411951" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6529432607506507" type="Money_Shop">
+                    <param id="0" name="Text">Money_Shop</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2423482042370597">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="2721890251804316" type="TouchWrap">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="5052749355373896" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set item" sid="907560633263376" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                    <param id="1" name="Value">Money_Shop</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5072855427563255">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="7538156106631806" type="Sprite5">
+                            <param id="0" name="Unique ID">119</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="993582863170309" type="System">
+                            <param id="0" name="Layer">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="3949526432599125" type="Sprite5">
+                            <param id="0" name="Object">UID_Shop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5340243676125367" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6465149407499084" type="System">
+                            <param id="0" name="Variable">Player</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set item" sid="580951045462718" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Player&quot;</param>
+                            <param id="1" name="Value">Player</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9705834425494039">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="7130431228187647" type="Sprite5">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="2019013337287712" type="System">
+                            <param id="0" name="Layer">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="307520388056186" type="Sprite5">
+                            <param id="0" name="Object">UID_Shop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5895628929837937" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5848737387559666">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="2007975724462314" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="2230681562458107" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">500</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="9615719619960771" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1024120888074462" type="System">
+                                    <param id="0" name="Variable">one</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4393119788198989" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="6585752200340996" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;one&quot;</param>
+                                    <param id="1" name="Value">one</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8834983054940063">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="1278359256161952" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2316273474961611" type="System">
+                                    <param id="0" name="Variable">Player</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="8165694634994783" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;Player&quot;</param>
+                                    <param id="1" name="Value">Player</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5829632832716203">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2461954736720423" type="Sprite5">
+                            <param id="0" name="Unique ID">121</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="28785636440337" type="System">
+                            <param id="0" name="Layer">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="9480985205050488" type="Sprite5">
+                            <param id="0" name="Object">UID_Shop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4181845062874731" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="933513778616709">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="466450986149676" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="855901447730617" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="5051435014340494" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Value">2000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5381676999627827" type="System">
+                                    <param id="0" name="Variable">two</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2701291199365392" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="8979922538792882" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;two&quot;</param>
+                                    <param id="1" name="Value">two</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3417973452147867">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="5779266307822628" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8364111053678986" type="System">
+                                    <param id="0" name="Variable">Player</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="0" name="Set item" sid="6491449281266014" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;Player&quot;</param>
+                                    <param id="1" name="Value">Player</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8187486683914072">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8237314849759783" type="Sprite5">
+                            <param id="0" name="Unique ID">122</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="1162483015190425" type="System">
+                            <param id="0" name="Layer">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="5241299303320534" type="Sprite5">
+                            <param id="0" name="Object">UID_Shop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="7268770369073615" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7314391215463643">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="1008289968556061" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8229042196911446" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="7973190586130944" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Value">5000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9648060004157821" type="System">
+                                    <param id="0" name="Variable">three</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="7784156999522332" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="3888472959739743" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;three&quot;</param>
+                                    <param id="1" name="Value">three</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5333611171561843">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="9799706538219238" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8394477805498083" type="System">
+                                    <param id="0" name="Variable">Player</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="0" name="Set item" sid="5935263696441721" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;Player&quot;</param>
+                                    <param id="1" name="Value">Player</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5025710460459571">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="931817522755428" type="Sprite5">
+                            <param id="0" name="Unique ID">123</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="724778595283473" type="System">
+                            <param id="0" name="Layer">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="5991745426465767" type="Sprite5">
+                            <param id="0" name="Object">UID_Shop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="9134821233578888" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1518642170339682">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="8853489924240108" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8742230550679711" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">20000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="858433988286938" type="System">
+                                    <param id="0" name="Variable">Money_Shop</param>
+                                    <param id="1" name="Value">20000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1036026267951054" type="System">
+                                    <param id="0" name="Variable">four</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="3403597334854266" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Set item" sid="8202968677592019" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;four&quot;</param>
+                                    <param id="1" name="Value">four</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4671670058084609">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="1247382553078175" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3495522806426262" type="System">
+                                    <param id="0" name="Variable">Player</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="0" name="Set item" sid="2689958066416772" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;Player&quot;</param>
+                                    <param id="1" name="Value">Player</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2436643055240555">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9103070950513342" type="Sprite5">
+                            <param id="0" name="Unique ID">140</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="8065236141562284" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="8326244359507325" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="4935452163870954" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">50</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="1573467856874891" type="System">
+                            <param id="0" name="Variable">Ice</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="5059563741870968" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3539804481321965" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="1343256123444797" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Ice&quot;</param>
+                            <param id="1" name="Value">Ice</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1447278665828656">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="1888871218094456" type="Sprite5">
+                            <param id="0" name="Unique ID">164</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5436594825639992" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="3994751782618153" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="2982779306209765" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="6234992386366485" type="System">
+                            <param id="0" name="Variable">Mine</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6908956662051763" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="463756118295721" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="9827263959180705" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Mine&quot;</param>
+                            <param id="1" name="Value">Mine</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8340100921643069">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8211175543812054" type="Sprite5">
+                            <param id="0" name="Unique ID">163</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6183113850598203" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">200</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="2103537437671988" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="420402377113055" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">200</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="5372594203423861" type="System">
+                            <param id="0" name="Variable">Shield</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4729240355550725" type="Audio">
+                            <param id="0" name="Audio file">Menu Click 3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8344809174726438" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="2367881372247378" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Shield&quot;</param>
+                            <param id="1" name="Value">Shield</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4745689098364729">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="185074337204019" type="TouchWrap">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="7037130120316499" type="Sprite5">
+                    <param id="0" name="Width">170</param>
+                    <param id="1" name="Height">270</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="977904962194552" type="Sprite5">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4521725018344393">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9046229115255678" type="TouchWrap">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="1598003896463057" type="Sprite5">
+                    <param id="0" name="Width">180</param>
+                    <param id="1" name="Height">280</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5174018411817716" type="Sprite5">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4743869392129624">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3850471183707107" type="System">
+                    <param id="0" name="Variable">one</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3598141225086987">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8598442436997128" type="Sprite11">
+                            <param id="0" name="Unique ID">141</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7038666929952938" type="Sprite11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="229859454490077">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6927287892402766" type="Sprite5">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="279837662155595" type="Sprite5">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="15639748946906">
+            <conditions>
+                <condition id="-22" name="Else" sid="8088912653888135" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2680020602689549">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6559331838580782" type="Sprite11">
+                            <param id="0" name="Unique ID">141</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2566064923037043" type="Sprite11">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2087777096805905">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="5904973886359487" type="Sprite5">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3782957476134388" type="Sprite5">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6891246028347344">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6325131897848032" type="System">
+                    <param id="0" name="Variable">two</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3307910601966814">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="1133963031313766" type="Sprite11">
+                            <param id="0" name="Unique ID">166</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7075765347035387" type="Sprite11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9074312547585936">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6848029921055053" type="Sprite5">
+                            <param id="0" name="Unique ID">121</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="7948005882498268" type="Sprite5">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6338179987954244">
+            <conditions>
+                <condition id="-22" name="Else" sid="9354293204180706" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7571366332898737">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="1366211062768798" type="Sprite11">
+                            <param id="0" name="Unique ID">166</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7657176689660903" type="Sprite11">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3168825074363065">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="7236755553486685" type="Sprite5">
+                            <param id="0" name="Unique ID">121</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2461584075685839" type="Sprite5">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8702420705512088">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6745516740705832" type="System">
+                    <param id="0" name="Variable">three</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6071710045988639">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6080721851532449" type="Sprite11">
+                            <param id="0" name="Unique ID">165</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2089747009532662" type="Sprite11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9305088250955924">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="6588159354340026" type="Sprite5">
+                            <param id="0" name="Unique ID">122</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8984245656388957" type="Sprite5">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2326771521346046">
+            <conditions>
+                <condition id="-22" name="Else" sid="8137752985791328" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5342742202480629">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="2763640029092548" type="Sprite11">
+                            <param id="0" name="Unique ID">165</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2635834677129431" type="Sprite11">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9494171237930358">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8884427788398792" type="Sprite5">
+                            <param id="0" name="Unique ID">122</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4601618660815" type="Sprite5">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1018897273033289">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7660140077907226" type="System">
+                    <param id="0" name="Variable">four</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7949594707008902">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8079791253229634" type="Sprite11">
+                            <param id="0" name="Unique ID">142</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="336458264164295" type="Sprite11">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6945707131418269">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="8711682619270324" type="Sprite5">
+                            <param id="0" name="Unique ID">123</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3981917328213996" type="Sprite5">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5425704960606327">
+            <conditions>
+                <condition id="-22" name="Else" sid="2043978461460305" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8285367895420189">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3185615298728932" type="Sprite11">
+                            <param id="0" name="Unique ID">142</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4558543283582825" type="Sprite11">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2802661807809567">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="1456013215181282" type="Sprite5">
+                            <param id="0" name="Unique ID">123</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="9506346115407205" type="Sprite5">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1435556448822176">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="713753654239719" type="Sprite14" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="4606275296161841" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4741237187050658" type="Sprite14">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5020921711698439">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="7667079975205506" type="Sprite14" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="2903128409894496" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9995292259614227" type="Sprite14">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1666223609626233" title="خرید سکه">
+            <sub-events>
+                <event-block sid="382299096587101">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="941141312648444" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="شناخت شناسه" sid="9394435376659387" type="adPlayCordovaInterfaceWithBazaarIAB">
+                            <param id="0" name="RSAKey">&quot;MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwCm7oOUL4DOPG2l6Lris7rQRx2gehB1wLDGDXklOwyhO8FpgYhxOx18FRZCGIfuW66uU0TzwrVrpQO6Y07PUisbT2bVd5axxEpzstmRQ2m6ZAsbDbUTFBDiGMPToimhNaFvS2wzQ4CC//FZfHV6+8qda8RaLTAyiP4NjL1Qw8k+ZUWu2KqwrdNwj8PJyZZcjP6q9exOiB5Gz8wYZ+DKkHSQ1dvSiwYrQTi49TBVfiECAwEAAQ==&quot;</param>
+                            <param id="1" name="consumables">&quot;2000coin,5000coin,10000coin&quot;</param>
+                            <param id="2" name="nonConsumables">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7397273693718884">
+                    <conditions>
+                        <condition id="101" name="On touch released at object" sid="6443982747982669" type="TouchWrap">
+                            <param id="0" name="Object">Sprite5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="41004619919224">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="5550021336320907" type="Sprite5">
+                                    <param id="0" name="Unique ID">147</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="1838079650135837" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="شروع خرید" sid="5980807763487724" type="adPlayCordovaInterfaceWithBazaarIAB">
+                                    <param id="0" name="element">&quot;2000coin&quot;</param>
+                                    <param id="1" name="payLoad">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="2927059202595659" type="Audio">
+                                    <param id="0" name="Audio file">Menu Click 3</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7287398629430542">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="4601302876175512" type="Sprite5">
+                                    <param id="0" name="Unique ID">148</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="449963143385792" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="شروع خرید" sid="8643175446971546" type="adPlayCordovaInterfaceWithBazaarIAB">
+                                    <param id="0" name="element">&quot;5000coin&quot;</param>
+                                    <param id="1" name="payLoad">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="6868574382538489" type="Audio">
+                                    <param id="0" name="Audio file">Menu Click 3</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="733842332380001">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="7667054784853235" type="Sprite5">
+                                    <param id="0" name="Unique ID">149</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="8617520250570016" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="شروع خرید" sid="9035423235284396" type="adPlayCordovaInterfaceWithBazaarIAB">
+                                    <param id="0" name="element">&quot;10000coin&quot;</param>
+                                    <param id="1" name="payLoad">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="9957265219877481" type="Audio">
+                                    <param id="0" name="Audio file">Menu Click 3</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5192679689141337">
+                    <conditions>
+                        <condition id="8" name="اگر خرید  مصرفی  انجام شد" sid="988612662041746" type="adPlayCordovaInterfaceWithBazaarIAB">
+                            <param id="0" name="Product ID">&quot;2000coin&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="446545308275218" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">2000</param>
+                        </action>
+                        <action id="0" name="Set item" sid="2161886495010573" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Money&quot;</param>
+                            <param id="1" name="Value">Money_Shop</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1041892287825507" type="تبلیغ">
+                            <param id="0" name="Text">&quot;مقدار 2000 سکه با موفقیت خریداری شد&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5119402630799936" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2689995054409011" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2663132818255517">
+                    <conditions>
+                        <condition id="8" name="اگر خرید  مصرفی  انجام شد" sid="8631468446060463" type="adPlayCordovaInterfaceWithBazaarIAB">
+                            <param id="0" name="Product ID">&quot;5000coin&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="3462066873147148" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">5000</param>
+                        </action>
+                        <action id="0" name="Set item" sid="7126146899136055" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Money&quot;</param>
+                            <param id="1" name="Value">Money_Shop</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4647542969077281" type="تبلیغ">
+                            <param id="0" name="Text">&quot;مقدار 5000 سکه با موفقیت خریداری شد&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7629426010197183" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5874067177237377" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9083283507718583">
+                    <conditions>
+                        <condition id="8" name="اگر خرید  مصرفی  انجام شد" sid="5818835303703358" type="adPlayCordovaInterfaceWithBazaarIAB">
+                            <param id="0" name="Product ID">&quot;10000coin&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="9250875648831909" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">10000</param>
+                        </action>
+                        <action id="0" name="Set item" sid="6111488540527921" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Money&quot;</param>
+                            <param id="1" name="Value">Money_Shop</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7393650048595311" type="تبلیغ">
+                            <param id="0" name="Text">&quot;مقدار 10000 سکه با موفقیت خریداری شد&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9255439140583272" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4457251127241128" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7932859248567503" title="تبلیغات">
+            <sub-events>
+                <event-block sid="2381075109910962">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="3200636240631419" type="TouchWrap">
+                            <param id="0" name="Object">Sprite13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="2988603696304258" type="Sprite13">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="103332541406091" type="Sprite13">
+                            <param id="0" name="Width">90</param>
+                            <param id="1" name="Height">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6097568414777072">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="8655665057734733" type="TouchWrap">
+                            <param id="0" name="Object">Sprite13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="7436798370056935" type="Sprite13">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="8614726064695611" type="Sprite13">
+                            <param id="0" name="Width">100</param>
+                            <param id="1" name="Height">110</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7928816935112464">
+                    <conditions>
+                        <condition id="101" name="On touch released at object" sid="2146772105831115" type="TouchWrap">
+                            <param id="0" name="Object">Sprite13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="نمایش ویدیو" sid="6679144569999646" type="TapsellVideo">
+                            <param id="0" name="حداقل جایزه">8</param>
+                            <param id="1" name="نوع تبلیغ">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9544825055058104">
+                    <conditions>
+                        <condition id="1" name="اگر مشاهده/کلیک شد" sid="4198482700305461" type="TapsellVideo" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="4183836680448751" type="System">
+                            <param id="0" name="Variable">Money_Shop</param>
+                            <param id="1" name="Value">30</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7116734224812677" type="تبلیغ">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4037285330057835" type="تبلیغ">
+                            <param id="0" name="Text">&quot;مقدار 30 سکه اضافه شد&quot;</param>
+                        </action>
+                        <action id="0" name="Set item" sid="7017138901066563" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Money&quot;</param>
+                            <param id="1" name="Value">Money_Shop</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3718808142409775" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1367381515779011" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9162068574386661">
+                    <conditions>
+                        <condition id="2" name="اگر مشاهده/کلیک نشد" sid="4136739978753861" type="TapsellVideo" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7039386977848752" type="تبلیغ">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="3411195593017935" type="تبلیغ">
+                            <param id="0" name="Text">&quot;تبلیغ لغو شد&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1125687476094636" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5062426984608693" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7371064671750265">
+                    <conditions>
+                        <condition id="0" name="اگر در دسترس نباشد" sid="1268947979029557" type="TapsellVideo" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5438905860612708" type="تبلیغ">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7160857357314859" type="تبلیغ">
+                            <param id="0" name="Text">&quot;ویدیو تبلیغاتی در دسترس نیست &quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8679837615741604" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="626999371033325" type="تبلیغ">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

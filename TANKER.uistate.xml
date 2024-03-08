@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Logo</layout>
+        <layout active="1" order="1">Shop</layout>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="Enemies" />
+        <family expanded="0" name="Bounses" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Player_Sar/" />
+        <folder expanded="1" path="animation-folder/Touch/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/Bullet_Player0/" />
+        <folder expanded="1" path="animation-folder/BulletP0andP41_FX/" />
+        <folder expanded="1" path="animation-folder/Enemy1/" />
+        <folder expanded="1" path="animation-folder/Blood/" />
+        <folder expanded="1" path="animation-folder/Coin/" />
+        <folder expanded="1" path="animation-folder/Enemy2/" />
+        <folder expanded="1" path="animation-folder/Blood2/" />
+        <folder expanded="1" path="animation-folder/Enemy3/" />
+        <folder expanded="1" path="animation-folder/Bullet_Enemy3/" />
+        <folder expanded="1" path="animation-folder/Enemy_Fire_Range/" />
+        <folder expanded="1" path="animation-folder/Enemy4/" />
+        <folder expanded="1" path="animation-folder/Enemy_Dead/" />
+        <folder expanded="1" path="animation-folder/Bullet_Enemy4/" />
+        <folder expanded="1" path="animation-folder/Fix/" />
+        <folder expanded="1" path="animation-folder/SlowMO/" />
+        <folder expanded="1" path="animation-folder/Destroy/" />
+        <folder expanded="1" path="animation-folder/Enemy5/" />
+        <folder expanded="1" path="animation-folder/Enemy5_Sar/" />
+        <folder expanded="1" path="animation-folder/Bullet_Enemy5/" />
+        <folder expanded="1" path="animation-folder/Enemy5_Dead/" />
+        <folder expanded="1" path="animation-folder/Enemy6/" />
+        <folder expanded="1" path="animation-folder/Enemy6_Pare/" />
+        <folder expanded="1" path="animation-folder/Bullet_Enemy6/" />
+        <folder expanded="1" path="animation-folder/Enemy6_Dead/" />
+        <folder expanded="1" path="animation-folder/Bullet_PLayer2/" />
+        <folder expanded="1" path="animation-folder/BulletP2andP42_FX/" />
+        <folder expanded="1" path="animation-folder/Bullet_Player1/" />
+        <folder expanded="1" path="animation-folder/BulletP1_FX/" />
+        <folder expanded="1" path="animation-folder/Bullet_Player3/" />
+        <folder expanded="1" path="animation-folder/BulletP3_FX/" />
+        <folder expanded="1" path="animation-folder/Bullet_Player4_1/" />
+        <folder expanded="1" path="animation-folder/Bullet_Player4_2/" />
+        <folder expanded="1" path="animation-folder/Game_Over/" />
+        <folder expanded="1" path="animation-folder/Mine/" />
+        <folder expanded="1" path="animation-folder/Logo/" />
+        <folder expanded="1" path="animation-folder/BTN_Menu/" />
+        <folder expanded="1" path="animation-folder/Score_Menu/" />
+        <folder expanded="1" path="animation-folder/obj_/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/obj_2/" />
+        <folder expanded="1" path="animation-folder/Sp_Finish/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/Bk_Shop/" />
+        <folder expanded="1" path="animation-folder/UID_Shop/" />
+        <folder expanded="1" path="animation-folder/btn_Shop/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/tools/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/Tanker/" />
+        <folder expanded="1" path="animation-folder/tools_game/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/IMG_20160918_/" />
+        <folder expanded="1" path="animation-folder/IMG_20160918_2/" />
+        <folder expanded="1" path="animation-folder/Picture/" />
+        <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Pause/" />
+        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/Wolf/" />
+        <folder expanded="1" path="animation-folder/FX_Finish/" />
+    </folders-expanded>
+</c2uistate>

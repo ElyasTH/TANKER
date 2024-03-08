@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="7249637494315978">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7835154427927382" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7206790306445302" type="Audio">
+                    <param id="0" name="Audio file">zoze-gorg-www.vaiomusic.com</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8069862985434422">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2319661234677577" type="Wolf">
+                    <param id="0" name="Object">Logo</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7073020685459386">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="3430145350668336" type="Logo">
+                            <param id="0" name="Unique ID">82</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8205020468790184" type="Logo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2689694683635605" type="System">
+                            <param id="0" name="Seconds">5.1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="4952793088628655" type="Logo" />
+                    </actions>
+                </event-block>
+                <event-block sid="4112492406202941">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="9578345966908629" type="Logo">
+                            <param id="0" name="Unique ID">84</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="894061373195535" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4543460831135577" type="Logo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="7223928243988222" type="Logo" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3352723873666608">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="1624911635338136" type="Logo" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3878475211559186" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

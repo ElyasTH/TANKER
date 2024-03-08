@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Help</name>
+    <events>
+        <event-block sid="3147619134766094">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="2148732590036608" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7215813627331443" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1050901710562485">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="6935221850015025" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="1177018089370554" type="Menu">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="6417657436388923" type="Menu">
+                    <param id="0" name="Width">90</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3299069985997983">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3066967663070845" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4135529865150257" type="Menu">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="-7" name="Set size" sid="7984340293590512" type="Menu">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3462851232919264">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="8144356442049221" type="TouchWrap">
+                    <param id="0" name="Object">Sprite17</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3187271208617602" type="Sprite17">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="3836321891187812" type="Sprite17">
+                    <param id="0" name="Width">70</param>
+                    <param id="1" name="Height">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="61899445972069">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5209495543350778" type="TouchWrap">
+                    <param id="0" name="Object">Sprite17</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="9560862996099018" type="Sprite17">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="-7" name="Set size" sid="5116765664306639" type="Sprite17">
+                    <param id="0" name="Width">80</param>
+                    <param id="1" name="Height">80</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8140657273005381">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="2168996637523256" type="TouchWrap">
+                    <param id="0" name="Object">Sprite17</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6900614145277746">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="7779644936519309" type="Sprite17">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="8437268190977518" type="IMG_20160918_2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6875683150227392" type="SlowMO">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2920992296521014" type="Destroy">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6922013395176988" type="Fix">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6554175757960225">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="3622994365264644" type="Sprite17">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6385540967641213" type="IMG_20160918_2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8169297127554813" type="SlowMO">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="874855295648064" type="Destroy">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2540700176040612" type="Fix">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

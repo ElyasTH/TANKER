@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="GameStart" sid="215351095401202" static="0" type="number">0</variable>
+        <variable constant="0" name="Music" sid="6134010541452573" static="0" type="number">0</variable>
+        <variable constant="0" name="Sound" sid="39670975082093" static="0" type="number">1</variable>
+        <event-block sid="9543035903672027">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3330968284744306" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="2084609338313278" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="4289640833741692" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Player&quot;</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="4501614261210496" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5683902364945162">
+            <conditions>
+                <condition id="9" name="On item exists" sid="4532756569483175" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Player&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="3353839151834347" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Player&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7940405976227511">
+            <conditions>
+                <condition id="9" name="On item exists" sid="8966051428902065" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="1577305117513082" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3416719162295086">
+            <conditions>
+                <condition id="1" name="On item get" sid="1867942416227725" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Player&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4044938534556241" type="System">
+                    <param id="0" name="Variable">Player</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4509416117704775">
+            <conditions>
+                <condition id="1" name="On item get" sid="4447021939065126" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4871399225668772" type="System">
+                    <param id="0" name="Variable">Money_Shop</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2750772010129937">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2486991313159218" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="1272312924200171" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9686466914867821">
+            <conditions>
+                <condition id="9" name="On item exists" sid="259407418124477" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="5025829099537078" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7658602070190599">
+            <conditions>
+                <condition id="1" name="On item get" sid="5032088672673045" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="253588091891885" type="System">
+                    <param id="0" name="Variable">Best_Score</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7139184189456614">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="5321322870877418" type="TouchWrap">
+                    <param id="0" name="Object">BTN_Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="9686513732733941" type="BTN_Menu">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="4516332053551815" type="BTN_Menu">
+                    <param id="0" name="Width">130</param>
+                    <param id="1" name="Height">45</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="6057550975466861">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="3036301865658229" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="3445149174939817" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="7076110482666381" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="7509635613721338" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="9802600631977004" type="BTN_Menu">
+                            <param id="0" name="Width">90</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8251042931741299">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8262816251891504" type="TouchWrap">
+                    <param id="0" name="Object">BTN_Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="4277072604304058" type="BTN_Menu">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="-7" name="Set size" sid="2797928101348374" type="BTN_Menu">
+                    <param id="0" name="Width">140</param>
+                    <param id="1" name="Height">55</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="9914415404667833">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="280527462308729" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="3654663546360313" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="7379375698025532" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="9244818521467609" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="2725769411832344" type="BTN_Menu">
+                            <param id="0" name="Width">100</param>
+                            <param id="1" name="Height">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8928029034083096">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8214482438666613" type="System" />
+                <condition id="-14" name="Compare variable" sid="9467016881536316" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2940664425799942" type="Audio">
+                    <param id="0" name="Audio file">15. Bloody Blades</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6949707184894673">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="4720395558611929" type="TouchWrap">
+                    <param id="0" name="Object">BTN_Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7644192476186802" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="8955287541560132" type="Audio">
+                    <param id="0" name="Audio file">Menu Click 3</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="369322392359103">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="8614780670323607" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Exit app" sid="9012189086660375" type="CocoonCanvasplus" />
+                        <action id="6" name="Stop" sid="8590512449423572" type="Audio">
+                            <param id="0" name="Tag">&quot;Menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8164512777968106">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="6133588552944545" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="651338216951559" type="System">
+                            <param id="0" name="Layout">About</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7578574961614069">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="8930943781832825" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="1481550797083535" type="System">
+                            <param id="0" name="Layout">Shop</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6703631093613903">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="2463253469814459" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4431256388947009" type="System">
+                            <param id="0" name="Layout">Loading_Game</param>
+                        </action>
+                        <action id="6" name="Stop" sid="846459649348344" type="Audio">
+                            <param id="0" name="Tag">&quot;Menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9210569336588913">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="5084734672416459" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="4848865210899532" type="Score_Menu">
+                            <param id="0" name="Instance variable">Variable1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3574549776109864" type="Score_Menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9504829112002388" type="BestScore">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8070649296734611">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="9498850506582171" type="Score_Menu">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="2112894514178974" type="Score_Menu">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4532074500379022" type="Score_Menu">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9516708380060131" type="BestScore">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9248710246656048">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7708869965663609" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="6811316464657761" type="Score_Menu">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6297937332134649" type="Score_Menu">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1037493260240308" type="BestScore">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5157651446993937">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="8185721460895845" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2346539142621953" type="System">
+                            <param id="0" name="Layout">Help</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2430884219494893">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="816044670401883" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2440120331716939" type="System">
+                            <param id="0" name="Variable">Sound</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4714980635066745">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="7851987532812901" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8055772515358661" type="System">
+                            <param id="0" name="Variable">Sound</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5749306563309589">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="9427365733611148" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="امتیاز به بازی" sid="1999452361465677" type="AndroidTools">
+                            <param id="0" name="Package Name">&quot;com.blackwolf.tanker&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8627763263590845">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8101594490966022" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="22" name="Set paused" sid="9658499885138445" type="Audio">
+                    <param id="0" name="Tag">&quot;Menu&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2996772323510443">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="1129650193838495" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4326891861778376" type="BTN_Menu">
+                            <param id="0" name="Frame number">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1993924165556165">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2392610787502917" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="22" name="Set paused" sid="956934540119368" type="Audio">
+                    <param id="0" name="Tag">&quot;Menu&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1114906520273667">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="5414058498470067" type="BTN_Menu">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2685578345491042" type="BTN_Menu">
+                            <param id="0" name="Frame number">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4904110013144662">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2940102048624147" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3635507204452785" type="BestScore">
+                    <param id="0" name="Text">Best_Score</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

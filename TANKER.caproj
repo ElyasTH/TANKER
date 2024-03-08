@@ -1,0 +1,2057 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>TANKER</name>
+    <description>Tanki</description>
+    <version>1.0.4</version>
+    <author>Black Wolf</author>
+    <author-email>elyastashakkori@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.blackwolf.tanker</app-id>
+    <unique-id>2fve9nm3yrynx</unique-id>
+    <saved-with-version>22600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Ludei" id="Cocoon_Canvasplus" version="1">Cocoon Canvasplus</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Pause" version="1">توقّف</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="adPlay" id="adPlayCordovaInterfaceWithBazaarIAB" version="2">adPlayCordovaInterfaceWithBazaarIAB</plugin>
+        <plugin author="Milad Mohammadi" id="miladesign_AndroidTools" version="1.399999976">Android Tools</plugin>
+        <plugin author="MilaDesign" id="miladesign_TapsellVideo" version="1.100000024">Tapsell Video</plugin>
+        <plugin author="Rex.Rainbow" id="rex_TouchWrap" version="0.100000001">Touch wrap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Logo</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="3208827102850255">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="7871768563395351" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="3771370354804162">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4918206116709832" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\س\TopDown_soldier_tank_body.png">
+                        <image-point name="Imagepoint 1" x="0.8" y="0.486667" />
+                        <image-point name="Imagepoint 2" x="0.08" y="0.493333" />
+                        <collision-poly>
+                            <point x="0.974419" y="0.960993" />
+                            <point x="0.5" y="0.996454" />
+                            <point x="0.00232559" y="0.996454" />
+                            <point x="0.00232559" y="0.00354612" />
+                            <point x="0.5" y="0.00354612" />
+                            <point x="0.974419" y="0.0390071" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522936" hotspotY="0.481481" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy11_00.png">
+                        <collision-poly>
+                            <point x="0.165138" y="0.166667" />
+                            <point x="0.495413" y="0.0185185" />
+                            <point x="0.844037" y="0.157407" />
+                            <point x="0.981651" y="0.5" />
+                            <point x="0.834862" y="0.833333" />
+                            <point x="0.495413" y="0.981481" />
+                            <point x="0.155963" y="0.842593" />
+                            <point x="0.0183486" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\static_02.png">
+                        <collision-poly>
+                            <point x="0.012987" y="0.012987" />
+                            <point x="0.5" y="0.025974" />
+                            <point x="0.987013" y="0.012987" />
+                            <point x="0.974026" y="0.5" />
+                            <point x="0.987013" y="0.987013" />
+                            <point x="0.5" y="0.974026" />
+                            <point x="0.012987" y="0.987013" />
+                            <point x="0.025974" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502645" hotspotY="0.502645" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\static_01.png">
+                        <collision-poly>
+                            <point x="0.132275" y="0.132275" />
+                            <point x="0.497355" y="0.00529101" />
+                            <point x="0.851852" y="0.148148" />
+                            <point x="0.989418" y="0.497355" />
+                            <point x="0.783069" y="0.783069" />
+                            <point x="0.497355" y="0.989418" />
+                            <point x="0.216931" y="0.783069" />
+                            <point x="0.00529101" y="0.497355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.395973" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\static_00.png">
+                        <collision-poly>
+                            <point x="0.0595238" y="0.0671141" />
+                            <point x="0.940476" y="0.0671141" />
+                            <point x="0.767857" y="0.496644" />
+                            <point x="0.5" y="0.993289" />
+                            <point x="0.232143" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player_Sar" sid="9194344792240416">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="8980551855703084">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2654462324334976" speed="0">
+                    <frame duration="1" hotspotX="0.176" hotspotY="0.5" original-source="D:\Construct 2\Sprites\س\TopDown_soldier_tank_turrent.png">
+                        <image-point name="Imagepoint 1" x="0.984" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0715706" y="0.309677" />
+                            <point x="0.499006" y="0.432258" />
+                            <point x="0.860835" y="0.451613" />
+                            <point x="0.998012" y="0.496774" />
+                            <point x="0.862823" y="0.554839" />
+                            <point x="0.499006" y="0.574194" />
+                            <point x="0.0576541" y="0.683871" />
+                            <point x="0.0536779" y="0.496774" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.283186" hotspotY="0.507813" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy12_01.png">
+                        <image-point name="Imagepoint 1" x="0.946903" y="0.117188" />
+                        <image-point name="Imagepoint 2" x="0.946903" y="0.890625" />
+                        <collision-poly>
+                            <point x="0.0707965" y="0.0625" />
+                            <point x="0.495575" y="0.046875" />
+                            <point x="0.911504" y="0.078125" />
+                            <point x="0.539823" y="0.5" />
+                            <point x="0.911504" y="0.921875" />
+                            <point x="0.495575" y="0.953125" />
+                            <point x="0.0707965" y="0.9375" />
+                            <point x="0.00884956" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.454545" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\tech_11.png">
+                        <image-point name="Imagepoint 1" x="0.945455" y="0.5" />
+                        <collision-poly>
+                            <point x="0.163636" y="0.201493" />
+                            <point x="0.49697" y="0.0895522" />
+                            <point x="0.739394" y="0.320896" />
+                            <point x="0.993939" y="0.5" />
+                            <point x="0.739394" y="0.679105" />
+                            <point x="0.49697" y="0.91791" />
+                            <point x="0.163636" y="0.798507" />
+                            <point x="0.0121212" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.336364" hotspotY="0.576271" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\tech_10.png">
+                        <image-point name="Imagepoint 1" x="0.936364" y="0.525424" />
+                        <collision-poly>
+                            <point x="0.0636364" y="0.118644" />
+                            <point x="0.5" y="0.20339" />
+                            <point x="0.736364" y="0.491525" />
+                            <point x="0.981818" y="0.491525" />
+                            <point x="0.8" y="0.627119" />
+                            <point x="0.5" y="0.79661" />
+                            <point x="0.145455" y="0.728814" />
+                            <point x="0.0181818" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.342857" hotspotY="0.496552" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\tech_09.png">
+                        <image-point name="Imagepoint 1" x="0.964286" y="0.42069" />
+                        <image-point name="Imagepoint 2" x="0.971429" y="0.593103" />
+                        <image-point name="Imagepoint 3" x="0.407143" y="0.124138" />
+                        <image-point name="Imagepoint 4" x="0.414286" y="0.868966" />
+                        <collision-poly>
+                            <point x="0.657143" y="0.331034" />
+                            <point x="1" y="0.503448" />
+                            <point x="0.657143" y="0.668966" />
+                            <point x="0.5" y="0.806897" />
+                            <point x="0.135714" y="0.77931" />
+                            <point x="0.0142857" y="0.496552" />
+                            <point x="0.121429" y="0.22069" />
+                            <point x="0.5" y="0.193103" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="1114027414619174">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4290949585940392" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TouchWrap" sid="3995634548893673">
+            <plugin id="rex_TouchWrap" />
+        </object-type>
+        <object-type name="background" sid="7398153756949286">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6077274942707065" speed="5">
+                    <frame duration="1" format="jpeg" hotspotX="0" hotspotY="0" original-source="C:\Users\Novin Pendar\Desktop\background11.png" quality="50" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Player0" sid="646040747812885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="376150040927567">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3473134730505982" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="D:\Construct 2\Projects\R.T.B\Sprites\Game\Bullet.png">
+                        <collision-poly>
+                            <point x="0.08" y="0.166667" />
+                            <point x="0.48" y="0.166667" />
+                            <point x="0.84" y="0.333333" />
+                            <point x="0.92" y="0.5" />
+                            <point x="0.84" y="0.666667" />
+                            <point x="0.48" y="0.833333" />
+                            <point x="0.08" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BulletP0andP41_FX" sid="2402081943293065">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="954580932665426">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7859696596338125" speed="1e+007">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0010.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="6236815150467533">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Enemy1" sid="4669123008280649">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="802418445557024" type="number" />
+                <instance-variable name="Damage" sid="4034205312425197" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="6968972449555188">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9369948005245766" speed="7">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_02.png">
+                        <collision-poly>
+                            <point x="0.172414" y="0.147059" />
+                            <point x="0.482759" y="0.264706" />
+                            <point x="0.586207" y="0.352941" />
+                            <point x="0.551724" y="0.5" />
+                            <point x="0.827586" y="0.852941" />
+                            <point x="0.482759" y="0.823529" />
+                            <point x="0.137931" y="0.882353" />
+                            <point x="0.0689655" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.529412" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_01.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.55" hotspotY="0.542857" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_00.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.62963" hotspotY="0.514286" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_03.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.617647" hotspotY="0.485714" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_04.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="6402193099549001" speed="7">
+                    <frame duration="1" hotspotX="0.628571" hotspotY="0.463415" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_05.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.621622" hotspotY="0.446809" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_06.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489796" hotspotY="0.510638" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_07.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.415094" hotspotY="0.604651" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy0_08.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blood" sid="6864236956756248">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8598705970559552">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8644317269163892" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\deadbody_00.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\deadbody_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\deadbody_02.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="4337747749980965">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Money" sid="512651796912792">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Coin" sid="3468346832333436">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6609902212871911" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.53" original-source="D:\Construct 2\Sprites\Sprite\13132.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy2" sid="7583851638411641">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="6853988925770211" type="number" />
+                <instance-variable name="Damage" sid="8534878117329667" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="6621227095177127">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9694091172185363" speed="7">
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.45" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_00.png">
+                        <collision-poly>
+                            <point x="0.0930233" y="0.1" />
+                            <point x="0.488372" y="0.175" />
+                            <point x="0.953488" y="0.05" />
+                            <point x="0.72093" y="0.7" />
+                            <point x="0.488372" y="0.85" />
+                            <point x="0.302326" y="0.675" />
+                            <point x="0.162791" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.487805" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_01.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_02.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.538462" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_03.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_04.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="3840985910113874" speed="7">
+                    <frame duration="1" hotspotX="0.368421" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_05.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378378" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_06.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378378" hotspotY="0.511111" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_07.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.358974" hotspotY="0.512821" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy2\enemy2_08.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blood2" sid="862769124767262">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3750874015555443">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9276256364035365" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\deadbody_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy3" sid="8975756097314695">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="2832184308191709" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="2453445536166359">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9405845979296104" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_00.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.8125" />
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.265625" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.515625" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.921875" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_01.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.8125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_02.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.8125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_03.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.8125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_04.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.8125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="2482953322864004" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_05.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.828125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_06.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.828125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_07.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.828125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_08.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.828125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy3\enemy1_09.png">
+                        <image-point name="Imagepoint 1" x="0.84375" y="0.828125" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Enemy3" sid="1778686042076656">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Damage" sid="8346686865380486" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="8438776148714179">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8538501331328778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\shell_00.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy_Fire_Range" sid="3296895304590247">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2225312255690296" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Novin Pendar\Desktop\Picture1.png">
+                        <collision-poly>
+                            <point x="0.141355" y="0.155527" />
+                            <point x="0.5" y="0.00257069" />
+                            <point x="0.858645" y="0.155527" />
+                            <point x="0.997664" y="0.5" />
+                            <point x="0.858645" y="0.844473" />
+                            <point x="0.5" y="0.997429" />
+                            <point x="0.141355" y="0.844473" />
+                            <point x="0.00233645" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy4" sid="8532859637844569">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="725412851989878" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="489155761434176">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9590250561497962" speed="5">
+                    <frame duration="1" hotspotX="0.506173" hotspotY="0.493827" original-source="D:\Construct 2\Projects\RIP 3\Images\enemy1\enemy1_09.png">
+                        <image-point name="Imagepoint 1" x="0.617284" y="0.777778" />
+                        <collision-poly>
+                            <point x="0.567901" y="0.432099" />
+                            <point x="0.987654" y="0.493827" />
+                            <point x="0.654321" y="0.641975" />
+                            <point x="0.506173" y="0.82716" />
+                            <point x="0.111112" y="0.888889" />
+                            <point x="0.0493823" y="0.493827" />
+                            <point x="0.123456" y="0.111111" />
+                            <point x="0.506173" y="0.382716" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy_Dead" sid="9609558436294705">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8046916690094275" speed="13">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_00.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Enemy4" sid="2564919516631931">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Damage" sid="5460063083908609" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="1157534023655287">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6880465626574124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\bullets\bullet_14.png">
+                        <collision-poly>
+                            <point x="0.647059" y="0.291667" />
+                            <point x="0.882353" y="0.5" />
+                            <point x="0.647059" y="0.708333" />
+                            <point x="0.352941" y="0.708333" />
+                            <point x="0.176471" y="0.5" />
+                            <point x="0.352941" y="0.291667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fix" sid="6708012533833531">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7767284170691461" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.490196" original-source="D:\Construct 2\Projects\RIP 3\Images\bonuses\bonus_14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SlowMO" sid="2348659920733949">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8466128238097723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="D:\Construct 2\Projects\RIP 3\Images\bonuses\bonus_00.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Destroy" sid="1911493334187221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727686002132663" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.526316" original-source="D:\Construct 2\Projects\RIP 3\Images\bonuses\bonus_01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy5" sid="5692193253302674">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="5432968380407008" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="5655803033902244">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6598031799205226" speed="5">
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\Users\Novin Pendar\Desktop\Untitled-1.png">
+                        <collision-poly>
+                            <point x="0.0592593" y="0.0952381" />
+                            <point x="0.496296" y="0.0357143" />
+                            <point x="0.866667" y="0.214286" />
+                            <point x="0.977778" y="0.5" />
+                            <point x="0.866667" y="0.785714" />
+                            <point x="0.496296" y="0.964286" />
+                            <point x="0.0518519" y="0.916667" />
+                            <point x="0.00740741" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy5_Sar" sid="6373996922652659">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="890841779095682">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1345539100170429" speed="5">
+                    <frame duration="1" hotspotX="0.204301" hotspotY="0.52381" original-source="C:\Users\Novin Pendar\Desktop\Untitled-2.png">
+                        <image-point name="Imagepoint 1" x="0.946237" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Enemy5" sid="9861970632048902">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Damage" sid="3878576634956592" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="1167591504150832">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5969992938712475" speed="5">
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.571429" original-source="D:\Construct 2\Projects\RIP 3\Images\bullets\bullet_10.png">
+                        <collision-poly>
+                            <point x="0.6" y="0.142857" />
+                            <point x="0.8" y="0.571429" />
+                            <point x="0.533333" y="0.857143" />
+                            <point x="0.266667" y="0.857143" />
+                            <point x="0.0666667" y="0.571429" />
+                            <point x="0.2" y="0.142857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy5_Dead" sid="315852189454594">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="64" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7437794104312148" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0001.png" />
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0002.png" />
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0005.png" />
+                    <frame duration="1" hotspotX="0.50505" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0006.png" />
+                    <frame duration="1" hotspotX="0.495327" hotspotY="0.495327" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0007.png" />
+                    <frame duration="1" hotspotX="0.495495" hotspotY="0.495495" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0008.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0009.png" />
+                    <frame duration="1" hotspotX="0.514563" hotspotY="0.509804" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0010.png" />
+                    <frame duration="1" hotspotX="0.519231" hotspotY="0.518868" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0011.png" />
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.513761" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0012.png" />
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.491379" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0013.png" />
+                    <frame duration="1" hotspotX="0.527778" hotspotY="0.483607" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0014.png" />
+                    <frame duration="1" hotspotX="0.536364" hotspotY="0.496063" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0015.png" />
+                    <frame duration="1" hotspotX="0.535714" hotspotY="0.496124" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0016.png" />
+                    <frame duration="1" hotspotX="0.529915" hotspotY="0.496183" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0017.png" />
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0018.png" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.496241" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0019.png" />
+                    <frame duration="1" hotspotX="0.515873" hotspotY="0.481752" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0020.png" />
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.465278" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0021.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.452703" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0022.png" />
+                    <frame duration="1" hotspotX="0.529851" hotspotY="0.449664" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0023.png" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.44" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0024.png" />
+                    <frame duration="1" hotspotX="0.532847" hotspotY="0.44" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0025.png" />
+                    <frame duration="1" hotspotX="0.536232" hotspotY="0.437086" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0026.png" />
+                    <frame duration="1" hotspotX="0.532374" hotspotY="0.440789" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0027.png" />
+                    <frame duration="1" hotspotX="0.532374" hotspotY="0.444444" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0028.png" />
+                    <frame duration="1" hotspotX="0.532374" hotspotY="0.448052" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0029.png" />
+                    <frame duration="1" hotspotX="0.532374" hotspotY="0.44586" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0030.png" />
+                    <frame duration="1" hotspotX="0.536232" hotspotY="0.443038" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0031.png" />
+                    <frame duration="1" hotspotX="0.536232" hotspotY="0.440252" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0032.png" />
+                    <frame duration="1" hotspotX="0.532847" hotspotY="0.44375" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0033.png" />
+                    <frame duration="1" hotspotX="0.532847" hotspotY="0.44375" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0034.png" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.440994" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0035.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.440994" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0036.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.440994" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0037.png" />
+                    <frame duration="1" hotspotX="0.537313" hotspotY="0.440994" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0038.png" />
+                    <frame duration="1" hotspotX="0.537313" hotspotY="0.44375" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0039.png" />
+                    <frame duration="1" hotspotX="0.541353" hotspotY="0.44375" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0040.png" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.44375" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0041.png" />
+                    <frame duration="1" hotspotX="0.546154" hotspotY="0.443038" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0042.png" />
+                    <frame duration="1" hotspotX="0.550388" hotspotY="0.443038" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0043.png" />
+                    <frame duration="1" hotspotX="0.551181" hotspotY="0.442308" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0044.png" />
+                    <frame duration="1" hotspotX="0.547619" hotspotY="0.441558" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0045.png" />
+                    <frame duration="1" hotspotX="0.548387" hotspotY="0.440789" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0046.png" />
+                    <frame duration="1" hotspotX="0.544715" hotspotY="0.44" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0047.png" />
+                    <frame duration="1" hotspotX="0.536585" hotspotY="0.439189" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0048.png" />
+                    <frame duration="1" hotspotX="0.532787" hotspotY="0.438356" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0049.png" />
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.433566" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0050.png" />
+                    <frame duration="1" hotspotX="0.516667" hotspotY="0.435714" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0051.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.430657" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0052.png" />
+                    <frame duration="1" hotspotX="0.508621" hotspotY="0.428571" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0053.png" />
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.439394" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0054.png" />
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.446154" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0055.png" />
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.460938" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0056.png" />
+                    <frame duration="1" hotspotX="0.495652" hotspotY="0.460938" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0057.png" />
+                    <frame duration="1" hotspotX="0.495652" hotspotY="0.465116" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0058.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.465116" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0059.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.469231" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0060.png" />
+                    <frame duration="1" hotspotX="0.575758" hotspotY="0.448" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0061.png" />
+                    <frame duration="1" hotspotX="0.575758" hotspotY="0.448" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0062.png" />
+                    <frame duration="1" hotspotX="0.57" hotspotY="0.504505" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Vehicle Explosion\Ve0063.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy6" sid="9283909846311103">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="7360963505344246" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="8243783138971931">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1422128277185813" speed="5">
+                    <frame duration="1" hotspotX="0.507874" hotspotY="0.505556" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\static_07.png">
+                        <image-point name="Imagepoint 1" x="0.614173" y="0.0833333" />
+                        <image-point name="Imagepoint 2" x="0.614173" y="0.922222" />
+                        <collision-poly>
+                            <point x="0.653543" y="0.294444" />
+                            <point x="0.980315" y="0.5" />
+                            <point x="0.653543" y="0.705556" />
+                            <point x="0.507874" y="0.983333" />
+                            <point x="0.334646" y="0.744444" />
+                            <point x="0.00787401" y="0.5" />
+                            <point x="0.330709" y="0.25" />
+                            <point x="0.507874" y="0.0166667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy6_Pare" sid="512335306098229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="326232773102487">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="1157575435432848">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5192128613322664" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\tech_12.png">
+                        <collision-poly>
+                            <point x="0.476744" y="0.476744" />
+                            <point x="0.5" y="0.00775194" />
+                            <point x="0.523256" y="0.476744" />
+                            <point x="0.992248" y="0.5" />
+                            <point x="0.523256" y="0.523256" />
+                            <point x="0.5" y="0.992248" />
+                            <point x="0.476744" y="0.523256" />
+                            <point x="0.00775194" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Enemy6" sid="1058785296042785">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Damage" sid="7777902947195713" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="3114752588181357">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9748859005795542" speed="5">
+                    <frame duration="1" hotspotX="0.35" hotspotY="0.888889" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\Projectiles\Bullet\Bu0008.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy6_Dead" sid="3706561392822628">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="32" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386429721835618" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0030.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0031.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_PLayer2" sid="8717990494471437">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1320847873473133">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4651683646980306" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\bullets\bullet_22.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.166667" />
+                            <point x="0.5" y="0.0555556" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="0.944444" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0.0555556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BulletP2andP42_FX" sid="7032248283262926">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5609566438256738">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9412041684850023" speed="35">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.627451" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_00.png">
+                        <collision-poly>
+                            <point x="0.236364" y="0.294118" />
+                            <point x="0.545455" y="0.176471" />
+                            <point x="0.854545" y="0.294118" />
+                            <point x="0.909091" y="0.627451" />
+                            <point x="0.8" y="0.901961" />
+                            <point x="0.545455" y="0.980392" />
+                            <point x="0.254545" y="0.941176" />
+                            <point x="0.109091" y="0.627451" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.528302" hotspotY="0.537037" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_01.png">
+                        <collision-poly>
+                            <point x="0.188679" y="0.203704" />
+                            <point x="0.528302" y="0.0925926" />
+                            <point x="0.867925" y="0.203704" />
+                            <point x="0.924528" y="0.537037" />
+                            <point x="0.792453" y="0.796296" />
+                            <point x="0.528302" y="0.925926" />
+                            <point x="0.207547" y="0.851852" />
+                            <point x="0.0943396" y="0.537037" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.574074" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_02.png">
+                        <collision-poly>
+                            <point x="0.207547" y="0.277778" />
+                            <point x="0.509434" y="0.111111" />
+                            <point x="0.849057" y="0.240741" />
+                            <point x="0.924528" y="0.574074" />
+                            <point x="0.811321" y="0.87037" />
+                            <point x="0.509434" y="0.962963" />
+                            <point x="0.169811" y="0.907407" />
+                            <point x="0.0566038" y="0.574074" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.555556" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_03.png">
+                        <collision-poly>
+                            <point x="0.188679" y="0.240741" />
+                            <point x="0.509434" y="0.0925926" />
+                            <point x="0.849057" y="0.222222" />
+                            <point x="0.924528" y="0.555556" />
+                            <point x="0.830189" y="0.87037" />
+                            <point x="0.509434" y="0.962963" />
+                            <point x="0.169811" y="0.888889" />
+                            <point x="0.0566038" y="0.555556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.490566" hotspotY="0.553571" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_04.png">
+                        <collision-poly>
+                            <point x="0.169811" y="0.25" />
+                            <point x="0.490566" y="0.107143" />
+                            <point x="0.830189" y="0.232143" />
+                            <point x="0.90566" y="0.553571" />
+                            <point x="0.849057" y="0.892857" />
+                            <point x="0.490566" y="0.964286" />
+                            <point x="0.132075" y="0.892857" />
+                            <point x="0.0377358" y="0.553571" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.54386" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_05.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.245614" />
+                            <point x="0.480769" y="0.122807" />
+                            <point x="0.826923" y="0.22807" />
+                            <point x="0.903846" y="0.54386" />
+                            <point x="0.846154" y="0.877193" />
+                            <point x="0.480769" y="0.947368" />
+                            <point x="0.153846" y="0.842105" />
+                            <point x="0.0384615" y="0.54386" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.489362" hotspotY="0.534483" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_06.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.258621" />
+                            <point x="0.489362" y="0.12069" />
+                            <point x="0.851064" y="0.241379" />
+                            <point x="0.957447" y="0.534483" />
+                            <point x="0.893617" y="0.862069" />
+                            <point x="0.489362" y="0.87931" />
+                            <point x="0.170213" y="0.793103" />
+                            <point x="0.0425532" y="0.534483" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.465116" hotspotY="0.508772" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_07.png">
+                        <collision-poly>
+                            <point x="0.116279" y="0.245614" />
+                            <point x="0.465116" y="0.0701754" />
+                            <point x="0.813953" y="0.245614" />
+                            <point x="0.976744" y="0.508772" />
+                            <point x="0.906977" y="0.842105" />
+                            <point x="0.465116" y="0.842105" />
+                            <point x="0.139535" y="0.754386" />
+                            <point x="0.0465116" y="0.508772" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.421053" hotspotY="0.473684" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_08.png">
+                        <collision-poly>
+                            <point x="0.0263158" y="0.210526" />
+                            <point x="0.421053" y="0.0350877" />
+                            <point x="0.789474" y="0.22807" />
+                            <point x="0.947368" y="0.473684" />
+                            <point x="0.947368" y="0.824561" />
+                            <point x="0.421053" y="0.824561" />
+                            <point x="0.315789" y="0.54386" />
+                            <point x="0.157895" y="0.473684" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.378378" hotspotY="0.433962" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_09.png">
+                        <collision-poly>
+                            <point x="0.0540541" y="0.207547" />
+                            <point x="0.378378" y="0.0188679" />
+                            <point x="0.945946" y="0.773585" />
+                            <point x="0.594594" y="0.962264" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="-0.631579" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\Exp7_10.png">
+                        <collision-poly>
+                            <point x="0.299999" y="0" />
+                            <point x="1" y="0.0526314" />
+                            <point x="1" y="0.842105" />
+                            <point x="0" y="0.894737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Player1" sid="8324556746963642">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="9237304436361455">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7341011610441525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\light_24.png">
+                        <collision-poly>
+                            <point x="0.159091" y="0.159091" />
+                            <point x="0.5" y="0.0227273" />
+                            <point x="0.840909" y="0.159091" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="0.977273" />
+                            <point x="0.159091" y="0.840909" />
+                            <point x="0.0227273" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BulletP1_FX" sid="8100426553819133">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1571216564946227">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1563537565803444" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\fx\flare_00.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Player3" sid="5243075006200297">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8646836823673426">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1141528657803494" speed="5">
+                    <frame duration="1" hotspotX="0.477273" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\bullets\bullet_15.png">
+                        <collision-poly>
+                            <point x="0.136364" y="0.159091" />
+                            <point x="0.477273" y="0.0227273" />
+                            <point x="0.818182" y="0.159091" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.818182" y="0.840909" />
+                            <point x="0.477273" y="0.977273" />
+                            <point x="0.136364" y="0.840909" />
+                            <point x="0.0227273" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BulletP3_FX" sid="4879197214856174">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7643472849682239">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9403636107209955" speed="5">
+                    <frame duration="1" hotspotX="0.489796" hotspotY="0.489796" original-source="D:\Construct 2\Projects\RIP 3\Images\bullets\bullet_21.png">
+                        <collision-poly>
+                            <point x="0.183673" y="0.183673" />
+                            <point x="0.489796" y="0.0408163" />
+                            <point x="0.795918" y="0.204082" />
+                            <point x="0.979592" y="0.489796" />
+                            <point x="0.816327" y="0.816327" />
+                            <point x="0.489796" y="0.979592" />
+                            <point x="0.163265" y="0.836735" />
+                            <point x="0.0204082" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Player4_1" sid="7179900092447397">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="4250555861931191">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502628733525424" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.7" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\Projectiles\Ts0008.png">
+                        <collision-poly>
+                            <point x="0.321429" y="0.2" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.642857" y="0.3" />
+                            <point x="0.785714" y="0.7" />
+                            <point x="0.535714" y="0.8" />
+                            <point x="0.464286" y="0.8" />
+                            <point x="0.0714286" y="0.7" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet_Player4_2" sid="776794497316587">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="5259906849514653">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5871456776297174" speed="5">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.666667" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\Projectiles\Missile\Mi0008.png">
+                        <collision-poly>
+                            <point x="0.393939" y="0.333333" />
+                            <point x="0.636364" y="0.333333" />
+                            <point x="0.727273" y="0.666667" />
+                            <point x="0.545455" y="0.75" />
+                            <point x="0.484848" y="0.75" />
+                            <point x="0.0606061" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Game_Over" sid="3948964790516305">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9734692696660432">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5128083886601866" speed="5">
+                    <frame duration="1" hotspotX="0.498571" hotspotY="0.36" original-source="C:\Users\Elyas\Desktop\object\گیم اور.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CocoonCanvasplus" sid="6794445768373609">
+            <plugin id="Cocoon_Canvasplus" />
+        </object-type>
+        <object-type name="Text" sid="2119292575763339">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mine" sid="1543292452004786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9182285099577802" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\Mine.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.191489" />
+                            <point x="0.5" y="0.0638298" />
+                            <point x="0.8125" y="0.191489" />
+                            <point x="0.930556" y="0.496454" />
+                            <point x="0.805556" y="0.801418" />
+                            <point x="0.5" y="0.929078" />
+                            <point x="0.194444" y="0.801418" />
+                            <point x="0.0625" y="0.496454" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Logo" sid="3319158897574229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8017618156825335">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4648009599680473" speed="0">
+                    <frame duration="1" hotspotX="0.501217" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\2.png">
+                        <collision-poly>
+                            <point x="1" y="0.241379" />
+                            <point x="1" y="0.827586" />
+                            <point x="0.956205" y="0.862069" />
+                            <point x="0.954767" y="0.258621" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500945" hotspotY="0.500945" original-source="C:\Users\Elyas\Desktop\2.png">
+                        <collision-poly>
+                            <point x="0.145558" y="0.145558" />
+                            <point x="0.499055" y="0" />
+                            <point x="0.854442" y="0.145558" />
+                            <point x="1" y="0.499055" />
+                            <point x="0.854442" y="0.854442" />
+                            <point x="0.499055" y="1" />
+                            <point x="0.145558" y="0.854442" />
+                            <point x="0" y="0.499055" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BK_Menu" sid="5184532811650932">
+            <plugin id="TiledBg" />
+            <texture format="jpeg" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\Background\Background.png" quality="50" />
+        </object-type>
+        <object-type name="BTN_Menu" sid="9236598720300115">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7426097661701399" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.37" />
+                    <frame duration="1" hotspotX="0.496" hotspotY="0.48" />
+                    <frame duration="1" hotspotX="0.496" hotspotY="0.53" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.64" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.63" />
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.585" original-source="D:\Construct 2\تانک\Picture3.png" />
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5" original-source="D:\Construct 2\تانک\Picture4.png" />
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5" original-source="D:\Construct 2\تانک\Picture5.png" />
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score_Menu" sid="4164155970413333">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Variable1" sid="3489303911915717" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8872959486866686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\تانک\Picture2.png">
+                        <collision-poly>
+                            <point x="0.0154639" y="0.0208333" />
+                            <point x="0.5" y="0.00416667" />
+                            <point x="0.984536" y="0.0208333" />
+                            <point x="0.984536" y="0.979167" />
+                            <point x="0.5" y="0.995833" />
+                            <point x="0.0128866" y="0.983333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BestScore" sid="5669457395324557">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="obj_" sid="3610120845040492">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4202953993461434" speed="5">
+                    <frame duration="1" hotspotX="0.508824" hotspotY="0.491176" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_06.png">
+                        <collision-poly>
+                            <point x="0.161088" y="0.142558" />
+                            <point x="0.508368" y="0.0545073" />
+                            <point x="0.834728" y="0.163522" />
+                            <point x="0.995816" y="0.490566" />
+                            <point x="0.849372" y="0.832285" />
+                            <point x="0.508368" y="0.953878" />
+                            <point x="0.190377" y="0.809224" />
+                            <point x="0.00627615" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="9164567496303533">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9863532085604211" speed="8">
+                    <frame duration="1" hotspotX="0.627451" hotspotY="0.702381" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_85.png" />
+                    <frame duration="1" hotspotX="0.631068" hotspotY="0.551402" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_86.png" />
+                    <frame duration="1" hotspotX="0.631068" hotspotY="0.439252" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_87.png" />
+                    <frame duration="1" hotspotX="0.623762" hotspotY="0.337079" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_88.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.315789" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_89.png" />
+                    <frame duration="1" hotspotX="0.380952" hotspotY="0.337079" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_90.png" />
+                    <frame duration="1" hotspotX="0.340206" hotspotY="0.435185" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_91.png" />
+                    <frame duration="1" hotspotX="0.346939" hotspotY="0.551402" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_92.png" />
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.702381" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_93.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.764706" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_94.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7272090620353248">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3964859636895707" speed="8">
+                    <frame duration="1" hotspotX="0.54661" hotspotY="0.451064" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_30.png" />
+                    <frame duration="1" hotspotX="0.52439" hotspotY="0.484" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_31.png" />
+                    <frame duration="1" hotspotX="0.520161" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_32.png" />
+                    <frame duration="1" hotspotX="0.509881" hotspotY="0.492126" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_33.png" />
+                    <frame duration="1" hotspotX="0.516" hotspotY="0.494118" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_34.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="2990797239975767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751589222483107" speed="15">
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.51" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_95.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.51" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_96.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.51" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_97.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.51" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_98.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.51" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_99.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_2" sid="2925027515444455">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8305369855374666" speed="5">
+                    <frame duration="1" hotspotX="0.521212" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\objects\obj_84.png">
+                        <collision-poly>
+                            <point x="0.284065" y="0.00722892" />
+                            <point x="0.75866" y="0.00481928" />
+                            <point x="0.973441" y="0.501205" />
+                            <point x="0.757506" y="0.995181" />
+                            <point x="0.284065" y="0.995181" />
+                            <point x="0.15127" y="0.501205" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bk_Finish" sid="1155950742951973">
+            <plugin id="TiledBg" />
+            <texture format="jpeg" original-source="C:\Users\Elyas\Desktop\Picture1.png" quality="50" />
+        </object-type>
+        <object-type name="Sp_Finish" sid="2220907828726534">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="67565433506806" speed="0">
+                    <frame duration="1" hotspotX="0.478125" hotspotY="0.577778" original-source="C:\Users\Elyas\Desktop\object\امتیاز.png" />
+                    <frame duration="1" hotspotX="0.478125" hotspotY="0.548148" original-source="C:\Users\Elyas\Desktop\object\رکورد.png" />
+                    <frame duration="1" hotspotX="0.475" hotspotY="0.711111" original-source="C:\Users\Elyas\Desktop\object\سکه.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu" sid="9946392959877577">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8106593788211669" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\Picture3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bk_Shop" sid="9085075638519975">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2500157689912549" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Elyas\Desktop\New folder\12312.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UID_Shop" sid="833458360338723">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2001257616670486" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.444444" original-source="C:\Users\Elyas\Desktop\New folder\Picture5.png">
+                        <collision-poly>
+                            <point x="0.0550239" y="0.00396825" />
+                            <point x="0.944976" y="0.00396825" />
+                            <point x="0.997608" y="0.444444" />
+                            <point x="0.997608" y="0.972222" />
+                            <point x="0.5" y="0.996032" />
+                            <point x="0.00239234" y="0.972222" />
+                            <point x="0.00239234" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_Shop" sid="7512845924732121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198238724716907" speed="0">
+                    <frame duration="1" hotspotX="0.480851" hotspotY="0.552239" />
+                    <frame duration="1" hotspotX="0.493776" hotspotY="0.714286" />
+                    <frame duration="1" hotspotX="0.477551" hotspotY="0.530303" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="3109775738933086">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="1411323558871695">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5557290194250806" speed="0">
+                    <frame duration="1" hotspotX="0.502645" hotspotY="0.514658" original-source="C:\Users\Elyas\Desktop\New folder\4_217214586560970926.png">
+                        <collision-poly>
+                            <point x="0.0846561" y="0.827362" />
+                            <point x="0.957672" y="0.827361" />
+                            <point x="0.957672" y="1" />
+                            <point x="0.0846561" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502645" hotspotY="0.514658" original-source="C:\Users\Elyas\Desktop\New folder\4_217214586560970927.png">
+                        <collision-poly>
+                            <point x="0.0846561" y="0.827362" />
+                            <point x="0.957672" y="0.827361" />
+                            <point x="0.957672" y="1" />
+                            <point x="0.0846561" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="6390267763754346">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437566183759127" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="5558735994505932">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="1317163227478887">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4048344894088381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tools" sid="7008429469281119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2316334019601511" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\Mine.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50625" original-source="C:\Users\Elyas\Desktop\New folder\Shield.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\snow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="545412874290616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5704676129799173" speed="0">
+                    <frame duration="1" hotspotX="0.45" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\coins 1.png" />
+                    <frame duration="1" hotspotX="0.491667" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\coins 2.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\coins 3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="9957339848568415">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="7676807622468687">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5662853916900115" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51" original-source="C:\Users\Elyas\Desktop\New folder\2000 تومان.png" />
+                    <frame duration="1" hotspotX="0.616" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\3000.png" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\5000 تومان.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.622222" original-source="C:\Users\Elyas\Desktop\New folder\50 سکه.png" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.611111" original-source="C:\Users\Elyas\Desktop\New folder\100 سکه.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\Elyas\Desktop\New folder\200 سکه.png" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.622222" original-source="C:\Users\Elyas\Desktop\New folder\500 سکه.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\Elyas\Desktop\New folder\2000 سکه.png" />
+                    <frame duration="1" hotspotX="0.503571" hotspotY="0.622222" original-source="C:\Users\Elyas\Desktop\New folder\5000 سکه.png" />
+                    <frame duration="1" hotspotX="0.502347" hotspotY="0.612403" original-source="C:\Users\Elyas\Desktop\New folder\10000 سکه.png" />
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.6" original-source="C:\Users\Elyas\Desktop\New folder\20000 سکه.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Money_Shop" sid="3317487022484439">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite12" sid="8423478567192004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9779937568975712" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.333333" />
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.341667" />
+                    <frame duration="1" hotspotX="0.492462" hotspotY="0.290323" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shield" sid="1966191877563885">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Minee" sid="8986264688034703">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ice" sid="780632916269359">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="adPlayCordovaInterfaceWithBazaarIAB" sid="9140675182816647">
+            <plugin id="adPlayCordovaInterfaceWithBazaarIAB" />
+        </object-type>
+        <object-type name="Sprite13" sid="9918799108820008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9990834317392173" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\13221.png">
+                        <collision-poly>
+                            <point x="0.363636" y="0.333333" />
+                            <point x="0.636364" y="0.333333" />
+                            <point x="0.99053" y="0.5" />
+                            <point x="0.954545" y="0.958333" />
+                            <point x="0.5" y="0.996528" />
+                            <point x="0.0416667" y="0.961806" />
+                            <point x="0.00378788" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="1364503796347035">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="2104976879316394">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4237736835874363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\3213213.png">
+                        <collision-poly>
+                            <point x="0.186978" y="0.480687" />
+                            <point x="0.499165" y="0.678112" />
+                            <point x="0.791319" y="0.536481" />
+                            <point x="0.919866" y="0.497854" />
+                            <point x="0.891486" y="0.72103" />
+                            <point x="0.499165" y="0.854077" />
+                            <point x="0.0717863" y="0.815451" />
+                            <point x="0.0901503" y="0.497854" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tanker" sid="3286171576758738">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2097213182487106" speed="5">
+                    <frame duration="1" hotspotX="0.489474" hotspotY="0.46" original-source="C:\Users\Elyas\Desktop\New folder\Tanker.png">
+                        <collision-poly>
+                            <point x="0.0482759" y="0.004329" />
+                            <point x="0.921182" y="0.034632" />
+                            <point x="0.959606" y="0.458874" />
+                            <point x="0.923153" y="0.891775" />
+                            <point x="0.0453202" y="0.926407" />
+                            <point x="0.026601" y="0.458874" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AndroidTools" sid="7283077451008528">
+            <plugin id="miladesign_AndroidTools" />
+        </object-type>
+        <object-type name="Loading" sid="1278315521794086">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="tools_game" sid="5544410615826549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3225494229246504" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\25.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\24.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="6257492097196907">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8484447395404181" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\shield_00.png">
+                        <collision-poly>
+                            <point x="0.115385" y="0.115385" />
+                            <point x="0.5" y="0.00769231" />
+                            <point x="0.884615" y="0.115385" />
+                            <point x="0.992308" y="0.5" />
+                            <point x="0.876923" y="0.876923" />
+                            <point x="0.5" y="0.992308" />
+                            <point x="0.123077" y="0.876923" />
+                            <point x="0.00769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\shield_01.png">
+                        <collision-poly>
+                            <point x="0.123077" y="0.123077" />
+                            <point x="0.5" y="0.00769231" />
+                            <point x="0.876923" y="0.123077" />
+                            <point x="0.992308" y="0.5" />
+                            <point x="0.884615" y="0.884615" />
+                            <point x="0.5" y="0.992308" />
+                            <point x="0.115385" y="0.884615" />
+                            <point x="0.00769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\shield_02.png">
+                        <collision-poly>
+                            <point x="0.123077" y="0.123077" />
+                            <point x="0.5" y="0.00769231" />
+                            <point x="0.876923" y="0.123077" />
+                            <point x="0.992308" y="0.5" />
+                            <point x="0.876923" y="0.876923" />
+                            <point x="0.5" y="0.992308" />
+                            <point x="0.107692" y="0.892308" />
+                            <point x="0.00769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Projects\RIP 3\Images\hero\shield_03.png">
+                        <collision-poly>
+                            <point x="0.130769" y="0.130769" />
+                            <point x="0.5" y="0.00769231" />
+                            <point x="0.884615" y="0.115385" />
+                            <point x="0.992308" y="0.5" />
+                            <point x="0.869231" y="0.869231" />
+                            <point x="0.5" y="0.992308" />
+                            <point x="0.123077" y="0.876923" />
+                            <point x="0.00769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IMG_20160918_" sid="6950940567269488">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4259220821874128" speed="5">
+                    <frame duration="1" format="jpeg" hotspotX="0" hotspotY="0" original-source="C:\Users\Elyas\Desktop\New folder\IMG_20160918_185136.jpg" quality="50" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="2282520802478389">
+            <plugin id="TiledBg" />
+            <texture format="jpeg" original-source="D:\Construct 2\Projects\RIP 3\Images\background5.jpg" quality="50" />
+        </object-type>
+        <object-type name="IMG_20160918_2" sid="1842073236097758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="75481671525039" speed="0">
+                    <frame duration="1" format="jpeg" hotspotX="0" hotspotY="0" original-source="C:\Users\Elyas\Desktop\New folder\IMG_20160918_191008.jpg" quality="50" />
+                    <frame duration="1" format="jpeg" hotspotX="0" hotspotY="0" original-source="C:\Users\Elyas\Desktop\New folder\IMG_20160918_185134.jpg" quality="50" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Picture" sid="6017359030258466">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2423823866227594" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Elyas\Desktop\New folder\Picture6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="805771174776929">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8111408196539568" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\312.png">
+                        <collision-poly>
+                            <point x="0.502427" y="0.0272278" />
+                            <point x="0.951457" y="0.267327" />
+                            <point x="0.953884" y="0.725248" />
+                            <point x="0.473301" y="0.972772" />
+                            <point x="0.0315534" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\312.png">
+                        <collision-poly>
+                            <point x="0.0194175" y="0.257426" />
+                            <point x="0.51699" y="0.0173268" />
+                            <point x="0.968447" y="0.5" />
+                            <point x="0.526699" y="0.962871" />
+                            <point x="0.0266991" y="0.735148" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Health" sid="2388729915713818">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="5813927453785551">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="TapsellVideo" sid="6124265141306419">
+            <plugin id="miladesign_TapsellVideo" />
+        </object-type>
+        <object-type name="تبلیغ" sid="8292292488549452">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Pause" sid="202683070268004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6545320204510941" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Elyas\Desktop\New folder\Pause.png">
+                        <collision-poly>
+                            <point x="0.154206" y="0.15942" />
+                            <point x="0.911215" y="0.0917874" />
+                            <point x="0.845794" y="0.84058" />
+                            <point x="0.088785" y="0.908213" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="توقّف" sid="5914706748593125">
+            <plugin id="Rex_Pause" />
+        </object-type>
+        <object-type name="Sprite19" sid="817485425223682">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4199276234095706" speed="0">
+                    <frame duration="1" hotspotX="0.505405" hotspotY="0.586667" />
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.373333" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wolf" sid="8007824216123119">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2493862134907065">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9121749686635784" speed="15">
+                    <frame duration="1" hotspotX="0.496259" hotspotY="0.400978" original-source="C:\Users\Elyas\Desktop\Black wolf\1.png" />
+                    <frame duration="1" hotspotX="0.513376" hotspotY="0.401985" original-source="C:\Users\Elyas\Desktop\Black wolf\3.png" />
+                    <frame duration="1" hotspotX="0.519481" hotspotY="0.42623" original-source="C:\Users\Elyas\Desktop\Black wolf\4.png" />
+                    <frame duration="1" hotspotX="0.523747" hotspotY="0.42394" original-source="C:\Users\Elyas\Desktop\Black wolf\5.png" />
+                    <frame duration="1" hotspotX="0.508344" hotspotY="0.339523" original-source="C:\Users\Elyas\Desktop\Black wolf\6.png" />
+                    <frame duration="1" hotspotX="0.459667" hotspotY="0.292958" original-source="C:\Users\Elyas\Desktop\Black wolf\7.png" />
+                    <frame duration="1" hotspotX="0.50814" hotspotY="0.372208" original-source="C:\Users\Elyas\Desktop\Black wolf\8.png" />
+                    <frame duration="1" hotspotX="0.471795" hotspotY="0.518887" original-source="C:\Users\Elyas\Desktop\Black wolf\9.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FX_Finish" sid="7045012019995628">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="32" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8008339308110827" speed="50">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0003.png" />
+                    <frame duration="1" hotspotX="0.492063" hotspotY="0.507937" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0004.png" />
+                    <frame duration="1" hotspotX="0.492063" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0012.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0013.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0014.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0015.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0016.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0017.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0018.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0019.png" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.507692" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.491228" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0025.png" />
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.512195" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0026.png" />
+                    <frame duration="1" hotspotX="0.475" hotspotY="0.512821" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0027.png" />
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.5" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0028.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.40625" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0029.png" />
+                    <frame duration="1" hotspotX="0.37037" hotspotY="0.387097" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0030.png" />
+                    <frame duration="1" hotspotX="1.33333" hotspotY="0.666667" original-source="D:\Construct 2\Sprites\New folder\Sprites\Battlefield\FX\Turret Blast\Tb0031.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Enemies" plugin-id="Sprite" sid="2699409602366755">
+            <members>
+                <member>Enemy1</member>
+                <member>Enemy2</member>
+                <member>Enemy3</member>
+                <member>Enemy4</member>
+            </members>
+        </family>
+        <family name="Bounses" plugin-id="Sprite" sid="7438754889652489">
+            <members>
+                <member>Destroy</member>
+                <member>Fix</member>
+                <member>SlowMO</member>
+            </members>
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="4150975860632978">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Logo.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Loading_Game.xml</layout>
+        <layout>Shop.xml</layout>
+        <layout>Help.xml</layout>
+        <layout>About.xml</layout>
+        <layout>FinishGame.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game.xml</event-sheet>
+        <event-sheet>Logo.xml</event-sheet>
+        <event-sheet>Loading.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>About.xml</event-sheet>
+        <event-sheet>Help.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="TouchWrap" uid="4">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+                <enable>Yes</enable>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="9">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="CocoonCanvasplus" uid="61" />
+        <global-instance type="adPlayCordovaInterfaceWithBazaarIAB" uid="176">
+            <properties>
+                <adplay-application-id>NZDehv5I7B</adplay-application-id>
+                <adplay-developer-id>UMbxH8e6eh</adplay-developer-id>
+            </properties>
+        </global-instance>
+        <global-instance type="AndroidTools" uid="180" />
+        <global-instance type="LocalStorage" uid="12" />
+        <global-instance type="TapsellVideo" uid="62">
+            <properties>
+                <tapsell-key>rkbmfsekcfthedsbbnqtcnpnbtcbcqcaseamrepsldpbekffgabdqddcqrhdjlbgiimaft</tapsell-key>
+            </properties>
+        </global-instance>
+        <global-instance type="توقّف" uid="200" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Explosion 4.ogg" />
+        <file name="death_00.ogg" />
+        <file name="attack_00.ogg" />
+        <file name="death_05.ogg" />
+        <file name="shoot_08.ogg" />
+        <file name="OK - 1.ogg" />
+        <file name="clock.ogg" />
+        <file name="bonuspickup.ogg" />
+        <file name="11_explosion.ogg" />
+        <file name="shoot_12.ogg" />
+        <file name="Explosion 2.ogg" />
+        <file name="tank_idle.ogg" />
+        <file name="tank_start.ogg" />
+        <file name="heli_idle.ogg" />
+        <file name="heli_start.ogg" />
+        <file name="track0.ogg" />
+        <file name="shoot_06.ogg" />
+        <file name="shoot_04.ogg" />
+        <file name="GameOver2.ogg" />
+        <file name="15. Bloody Blades.ogg" />
+        <file name="VocoderFive.ogg" />
+        <file name="VocoderFour.ogg" />
+        <file name="VocoderOne.ogg" />
+        <file name="VocoderThree.ogg" />
+        <file name="VocoderTwo.ogg" />
+        <file name="Menu Click 3.ogg" />
+        <file name="weaponpickup.ogg" />
+        <file name="Sword Swing.ogg" />
+        <file name="attack_02.ogg" />
+        <file name="shoot_15.ogg" />
+        <file name="shoot_16.ogg" />
+        <file name="big_explosion.ogg" />
+        <file name="zoze-gorg-www.vaiomusic.com.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

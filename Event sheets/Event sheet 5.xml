@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 5</name>
+    <events>
+        <variable constant="0" name="Best_Score" sid="8572669113076362" static="0" type="number">0</variable>
+        <event-block sid="5589667406863169">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4227773893467813" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="6761877961122731" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6386650446091634">
+            <conditions>
+                <condition id="9" name="On item exists" sid="1741778756156793" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="4860859863384621" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7552553304868497">
+            <conditions>
+                <condition id="1" name="On item get" sid="6869200426110269" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8533185409621087" type="System">
+                    <param id="0" name="Variable">Best_Score</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9380108781984106">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9923905261139669" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1382447592024634" type="Audio">
+                    <param id="0" name="Audio file">shoot_04</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4454788423633009" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="3176198982763196" type="Audio">
+                    <param id="0" name="Audio file">shoot_04</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8749680889276656" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="3390428305002279" type="Audio">
+                    <param id="0" name="Audio file">shoot_04</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set item" sid="1400759606094832" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                    <param id="1" name="Value">Best_Score</param>
+                </action>
+                <action id="-10" name="Add to" sid="4291797284368157" type="System">
+                    <param id="0" name="Variable">Money_Shop</param>
+                    <param id="1" name="Value">Money</param>
+                </action>
+                <action id="0" name="Set item" sid="8720338189024035" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Money&quot;</param>
+                    <param id="1" name="Value">Money_Shop</param>
+                </action>
+                <action id="-16" name="Wait" sid="8959946022501792" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8956569494497875" type="Menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9791396371277893" type="System">
+                    <param id="0" name="Variable">Music</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="3904830879829365" type="Score">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action id="0" name="Set text" sid="5696181012449889" type="Money">
+                    <param id="0" name="Text">Money</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="279915111610543">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4783640459234028" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">Best_Score</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4163346689599673" type="System">
+                            <param id="0" name="Variable">Best_Score</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2208656108680201" type="BestScore">
+                            <param id="0" name="Text">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="6791757357293" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                            <param id="1" name="Value">Best_Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7616201484448463">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2663660838341185" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">Best_Score</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="8724347545237887" type="BestScore">
+                            <param id="0" name="Text">Best_Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="3581950121755786" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Best_Score&quot;</param>
+                            <param id="1" name="Value">Best_Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4258656840554065">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5722762367148693" type="Bullet_Player4_2">
+                    <param id="0" name="Object">Sp_Finish</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9275831650291691" type="Bullet_Player4_2" />
+                <action id="0" name="Spawn another object" sid="6138937444983363" type="Bullet_Player4_2">
+                    <param id="0" name="Object">FX_Finish</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Play" sid="461060334410406" type="Audio">
+                    <param id="0" name="Audio file">big_explosion</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="6227635734270073" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8303649401090582" type="Sp_Finish">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="151863217058551">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="8971860069908618" type="Sp_Finish">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4295066845394304" type="Score">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3013310634819142">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="2830479574199911" type="Sp_Finish">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7297967734099499" type="BestScore">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3275399881196312">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="5723663909587996" type="Sp_Finish">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="288371990776912" type="Money">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3381280555675067">
+            <conditions>
+                <condition id="101" name="On touch released at object" sid="389820364450558" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="6848519468707609" type="Menu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4961356151118184" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508341621817241">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="9693596682234447" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="2507864347660146" type="Menu">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-7" name="Set size" sid="3617140898737909" type="Menu">
+                    <param id="0" name="Width">90</param>
+                    <param id="1" name="Height">60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8161419659299236">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3430648439808971" type="TouchWrap">
+                    <param id="0" name="Object">Menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3696899802171972" type="Menu">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+                <action id="-7" name="Set size" sid="444853589625257" type="Menu">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">70</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
